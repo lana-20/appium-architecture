@@ -3,7 +3,7 @@
 Mobile Automation Framework Tool
 
 [View Diagram Here](https://miro.com/app/board/o9J_lIIoGxA=/?share_link_id=28667859121)
-![image](https://user-images.githubusercontent.com/70295997/205175514-aa9dd3e5-ddb1-46e0-a550-6c6f63c10818.png)
+![image](https://user-images.githubusercontent.com/70295997/205180266-f97c9354-ea31-462b-9c9c-21e1581612f8.png)
 
 Mobile Automation for Native, Hybrid (Cross-Platform) or Web apps.
 
@@ -12,7 +12,7 @@ Appium Server runs on the node server (is written in Node.js).
 
 Client send Request to Server via HTTP in the forms of JSON Wire Protocol (WP) or a typical W3C WebDriver JSON. Along with the Request, Client sends Desired Capabilities (DC), which the Server is smart enough to interpret. DC can be anything, eg, types of devices, OS platforms, browsers, packages info, etc.
 
-![image](https://user-images.githubusercontent.com/70295997/205175697-5bcc10ed-770f-4851-91ab-1e1e76cbd60f.png)
+![image](https://user-images.githubusercontent.com/70295997/205179816-c54b1afc-c33e-48b4-8101-c10ab26229c3.png)
 
 For iOS version < 9.3, use UIAutomation module. No need for WebDriver Agent, it directly connects to the app on a device/simulator.
 
@@ -37,7 +37,7 @@ __Desired Capabilites: {"AutomationName" : "UIAutomation"}__ means to take the U
 When I initialize the WebDriver, I create an object of DC and pass it to Appium Server, which runs on some machine. Eg, 192.168.1.10:9268 stands for IP address:Port number. 
 Through DC/RemoteWebDriver I connect to a particular Node Server and pass the DC object to the server.
 
-![image](https://user-images.githubusercontent.com/70295997/205175832-2cecdf98-aae2-4f5c-bd7b-f265af7faeb2.png)
+![image](https://user-images.githubusercontent.com/70295997/205179971-40132ac2-9cfc-43d7-bc2b-f801a1a2bff3.png)
 
 UIAutomator1 is the older version, which is deprecated.
 
