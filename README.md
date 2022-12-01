@@ -3,7 +3,7 @@
 Mobile Automation Framework Tool
 
 [View Diagram Here](https://miro.com/app/board/o9J_lIIoGxA=/?share_link_id=28667859121)
-![image](https://user-images.githubusercontent.com/70295997/205165870-65be474a-0518-4e94-9dde-36e50408b77f.png)
+![image](https://user-images.githubusercontent.com/70295997/205175514-aa9dd3e5-ddb1-46e0-a550-6c6f63c10818.png)
 
 Mobile Automation for Native, Hybrid (Cross-Platform) or Web apps.
 
@@ -12,7 +12,7 @@ Appium Server runs on the node server (is written in Node.js).
 
 Client send Request to Server via HTTP in the forms of JSON Wire Protocol (WP) or a typical W3C WebDriver JSON. Along with the Request, Client sends Desired Capabilities (DC), which the Server is smart enough to interpret. DC can be anything, eg, types of devices, OS platforms, browsers, packages info, etc.
 
-![image](https://user-images.githubusercontent.com/70295997/205171677-17d25555-8e14-4ca3-845b-cf147052fc17.png)
+![image](https://user-images.githubusercontent.com/70295997/205175697-5bcc10ed-770f-4851-91ab-1e1e76cbd60f.png)
 
 For iOS version < 9.3, use UIAutomation module. No need for WebDriver Agent, it directly connects to the app on a device/simulator.
 
@@ -37,8 +37,23 @@ __Desired Capabilites: {"AutomationName" : "UIAutomation"}__ means to take the U
 When I initialize the WebDriver, I create an object of DC and pass it to Appium Server, which runs on some machine. Eg, 192.168.1.10:9268 stands for IP address:Port number. 
 Through DC/RemoteWebDriver I connect to a particular Node Server and pass the DC object to the server.
 
+![image](https://user-images.githubusercontent.com/70295997/205175832-2cecdf98-aae2-4f5c-bd7b-f265af7faeb2.png)
 
-![image](https://user-images.githubusercontent.com/70295997/205173717-73da3dd6-f913-43c7-9fb1-21a0a6d4d42e.png)
+UIAutomator1 is the older version, which is deprecated.
+
+Request is sent to UIAutomator2, which is an Appium module provided by Google. Request is then sent to an Android device/emulator. Through UIAutomator2 module, I perform actions like click, tap, scroll, etc. I use __Desired Capabilites: {"AutomationName" : "UIAutomator2"}__.
+
+Appium-Android-Bootsrtap jar file helps UIAutomator perform actions on a particular app/device.
+
+Espresso Driver was specially designed for Android OS by Google. For Android automation, I can use Espresson Driver in addition to UIAutomator2. 
+
+Espesso Driver:
+- extends Appium classes -> becomes availabl
+- starts Espresso Server
+- internally uses Appium Client libraries only
+
+Espresso Server uses Espresso Modules, which are only used for Android devices.
+
 
 
 
