@@ -45,7 +45,7 @@ Request is sent to UIAutomator2, which is an Appium module provided by Google. R
 
 Appium-Android-Bootsrtap jar file helps UIAutomator perform actions on a particular app/device.
 
-Espresso Driver was specially designed for Android OS by Google. For Android automation, I can use Espresson Driver in addition to UIAutomator2. 
+Espresso Driver was specially designed for Android OS by Google. For Android automation, I can use Espresso Driver in addition to UIAutomator2. 
 
 Espesso Driver:
 - extends Appium classes -> becomes available
@@ -73,7 +73,7 @@ Taizen Driver is for Samsung devices.
 6. Windows
 7. Mac
 
-There is support for Browser. Eg, I want to launch Chrome browser on Android. There a 2 ways to do it. I can use (1) UIAutomator2 or (2) Espresso Driver. Both provide one concept - ChromeDriver. I use ChromeDriver to launch Chrome browser on my Android devices.
+There is support for Browser. Eg, I want to launch Chrome browser on Android. There are 2 ways to do it. I can use (1) UIAutomator2 or (2) Espresso Driver. Both provide one concept - ChromeDriver. I use ChromeDriver to launch Chrome browser on my Android devices.
 
 -------
 
@@ -89,7 +89,7 @@ When automating for Android, I use a combo of both Appium [module] and UIAutomat
 Eg, my .click() or .title is not working with the help of Appium, or some element is hidden when I try to tap on it. I use UIAutomator2 Driver which directly interacts with Android [OS] native APIs.
 
 
-I can also create my own customized "Lana" driver. All drivers are modules, which are imlementations od the core Appium [module]. the concept is the same -> start the server, connect the respective driver. In case of Espesso Driver, I can use Espresso Server.
+I can also create my own customized "Lana" driver. All drivers are modules, which are implementations of the core Appium [module]. The concept is the same -> start the server, connect the respective driver. In case of Espesso Driver, I can use Espresso Server.
 Eg, I want to create a customized library on top of Appium, such as LanaAppiumDriver for Android and iOS.
 ![image](https://user-images.githubusercontent.com/70295997/205183692-a25ff1cc-fe8a-4f2a-920d-8d9969037b46.png)
 
