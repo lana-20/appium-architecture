@@ -10,7 +10,7 @@ Mobile Automation for Native, Hybrid (Cross-Platform) or Web apps.
 Appium has a typical Client-Server architecture.
 Appium Server runs on the node server (is written in Node.js).
 
-Client send Request to Server via HTTP in the forms of JSON Wire Protocol (WP) or a typical W3C WebDriver JSON. Along with the Request, Client sends Desired Capabilities (DC), which the Server is smart enough to interpret. DC can be anything, eg, types of devices, OS platforms, browsers, packages info, etc.
+Client sends Request to Server via HTTP in the forms of JSON Wire Protocol (WP) or a typical W3C WebDriver JSON. Along with the Request, Client sends Desired Capabilities (DC), which the Server is smart enough to interpret. DC can be anything, eg, types of devices, OS platforms, browsers, packages info, etc.
 
 ![image](https://user-images.githubusercontent.com/70295997/205179816-c54b1afc-c33e-48b4-8101-c10ab26229c3.png)
 
@@ -24,7 +24,7 @@ UIAutomation Module and XCUITest Driver are provided/propagated by Apple, not Se
 
 In scenarios with iOS < 9.3, use Bootstrap.js. Appium Server injects Bootstrap.js into the device/simulator side to perform actions such as .click(), .send_keys(), .tap(), .scroll(), or kill the app. The actions happen through UIAutomation module, which transfers these commands to Bootstrap.js.
 
-In scenarios with iOS >= 9/3, use WebDriver Agent to perform some actions (tap, type, kill app, etc.). The actions are done by WebDriver Agent om a particular iOS device/simulator.
+In scenarios with iOS >= 9.3, use WebDriver Agent to perform some actions (tap, type, kill app, etc.). The actions are done by WebDriver Agent on a particular iOS device/simulator.
 
 Appium 1.6 started implemeting the new flow of XCUITest for iOS >= 9.3. (Current version is 1.22.3-4, as of 12/01/22).
 
@@ -34,7 +34,7 @@ From the DC point of view, when I pass __Desired Capabilites: {"AutomationName" 
 
 __Desired Capabilites: {"AutomationName" : "UIAutomation"}__ means to take the UIAutomation Module flow for iOS < 9.3.
 
-When I initialize the WebDriver, I create an object of DC and pass it to Appium Server, which runs on some machine. Eg, 192.168.1.10:9268 stands for IP address:Port number. 
+When I initialize the WebDriver, I create an object of DC and pass it to Appium Server, which runs on some machine. Eg, 192.168.1.10:9268 which stands for IP address : Port number. 
 Through DC/RemoteWebDriver I connect to a particular Node Server and pass the DC object to the server.
 
 ![image](https://user-images.githubusercontent.com/70295997/205179971-40132ac2-9cfc-43d7-bc2b-f801a1a2bff3.png)
