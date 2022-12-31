@@ -1,0 +1,34 @@
+https://www.tizen.org/
+
+Tizen is a Linux-based mobile operating system backed by the Linux Foundation, mainly developed and used primarily by Samsung Electronics. The project was originally conceived as an HTML5-based platform for mobile devices to succeed MeeGo. Samsung merged its previous Linux-based OS effort, Bada, into Tizen, and has since used it primarily on platforms such as wearable devices and smart TVs.
+
+To use Appium to test a Tizen-based app, you will need to use the Tizen driver, which is a client library that enables Appium to interact with Tizen devices.
+
+To use the Tizen driver with Appium, you will need to install the Tizen SDK on your machine and configure Appium to use the Tizen driver. You can then use Appium to write and execute tests on a Tizen device or emulator, just as you would with any other mobile platform.
+
+Here is an example of how you might use the Tizen driver with Appium in Python:
+
+    # Import the necessary libraries
+    from appium import webdriver
+
+    # Set up the desired capabilities for the Tizen device
+    desired_capabilities = {
+        'platformName': 'Tizen',
+        'platformVersion': '5.5',
+        'deviceName': 'SM-G950F',
+        'app': '/path/to/my/app.tpk'
+    }
+
+    # Start the Appium server and create a driver
+    driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_capabilities)
+
+    # Use the driver to interact with the Tizen app
+    driver.find_element_by_id('button1').click()
+    driver.find_element_by_id('textbox1').send_keys('Hello, world!')
+
+    # Close the driver and stop the Appium server
+    driver.quit()
+
+Overall, the Tizen driver is an essential component for using Appium to test Tizen-based apps. It enables Appium to interact with Tizen devices and execute tests on them, just as it does with other mobile platforms.
+
+
