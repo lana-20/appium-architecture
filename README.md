@@ -3,7 +3,7 @@
 Mobile Automation Framework Tool
 
 [View Diagram Here](https://miro.com/app/board/o9J_lIIoGxA=/?share_link_id=28667859121)
-![image](https://user-images.githubusercontent.com/70295997/205180266-f97c9354-ea31-462b-9c9c-21e1581612f8.png)
+![image](https://user-images.githubusercontent.com/70295997/210121771-0c864cc5-c665-416e-83d8-7761824f6ae7.png)
 
 Mobile Automation for Native, Hybrid (Cross-Platform) or Web apps.
 
