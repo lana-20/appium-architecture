@@ -62,14 +62,14 @@ There is support for Mac. Apple provides Mac Driver, which gives me Appium Mac m
 
 [you.I](https://github.com/lana-20/appium-architecture/blob/main/You.i%20Platform) Driver is customized implementation available for you.I-enabled apps.
 
-Taizen Driver is for Samsung devices.
+[Tizen](https://github.com/lana-20/appium-architecture/blob/main/Tizen-Platform) Driver is for Samsung devices.
 
 7 main Drivers (for Native or Hybrid/Cross-Platform apps):
 1. UIAutomator2
 2. Espresso
 3. XCUITest
 4. UIAutomation
-5. Taizen
+5. Tizen
 6. Windows
 7. Mac
 
