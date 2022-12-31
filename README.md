@@ -60,7 +60,7 @@ There is support for Windows. Microsoft provides Windows Driver, which gives me 
 
 There is support for Mac. Apple provides Mac Driver, which gives me Appium Mac module to use for apps on Mac machines.
 
-youI Driver is customized implementation available for youI-enabled apps.
+[you.I](https://github.com/lana-20/appium-architecture/blob/main/You.i%20Platform) Driver is customized implementation available for you.I-enabled apps.
 
 Taizen Driver is for Samsung devices.
 
