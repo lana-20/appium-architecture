@@ -7,8 +7,13 @@ Mobile Automation Framework Tool
 
 Mobile Automation for Native, Hybrid (Cross-Platform) or Web apps.
 
+<img width="600" src="https://user-images.githubusercontent.com/70295997/213338978-6402b78c-6858-4c25-902d-de1ddd90677f.png">
+
+
 Appium has a typical Client-Server architecture.
 Appium Server runs on the node server (is written in Node.js).
+
+<img width="600" src="https://user-images.githubusercontent.com/70295997/213340824-afd8d79f-6bac-433a-8dff-ad1b2a792ce8.png">
 
 Client sends Request to Server via HTTP in the forms of JSON Wire Protocol (WP) or a typical W3C WebDriver JSON. Along with the Request, Client sends Desired Capabilities (DC), which the Server is smart enough to interpret. DC can be anything, eg, types of devices, OS platforms, browsers, packages info, etc.
 
@@ -33,6 +38,8 @@ How does Appium [Server] decide which path to take? It's decided from the Client
 From the DC point of view, when I pass __Desired Capabilites: {"AutomationName" : "XCUITest"}__, it means to take the XCUITest Driver flow for iOS >= 9.3. Most users have migrated to iOS 15 and 16, as of 12/01/22.
 
 __Desired Capabilites: {"AutomationName" : "UIAutomation"}__ means to take the UIAutomation Module flow for iOS < 9.3.
+
+<img width="600" src="https://user-images.githubusercontent.com/70295997/213339905-4e2d7929-cc50-4b4b-8af5-e3a50ac2e0b9.png">
 
 When I initialize the WebDriver, I create an object of DC and pass it to Appium Server, which runs on some machine. Eg, 192.168.1.10:9268 which stands for IP address : Port number. 
 Through DC/RemoteWebDriver I connect to a particular Node Server and pass the DC object to the server.
