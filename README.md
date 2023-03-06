@@ -5,7 +5,7 @@ Mobile Automation Framework Tool for Native, Hybrid (Cross-Platform) or Web apps
 [View Diagram Here](https://miro.com/app/board/o9J_lIIoGxA=/?share_link_id=28667859121) 
 ![image](https://user-images.githubusercontent.com/70295997/210121771-0c864cc5-c665-416e-83d8-7761824f6ae7.png)
 
-(#TODO - update the Miro diagram to include FlutterDriver, as per below illustration):
+The Appium ecosystem is evolving. The community keeps creating custom drivers, for example FlutterDriver:
 
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/213341471-9eea67cd-67e8-4657-823c-14821bd450d9.png">
 
