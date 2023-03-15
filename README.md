@@ -5,10 +5,15 @@ Mobile Automation Framework Tool for Native, Hybrid (Cross-Platform) or Web apps
 [View Diagram Here](https://miro.com/app/board/o9J_lIIoGxA=/?share_link_id=28667859121) 
 ![image](https://user-images.githubusercontent.com/70295997/210121771-0c864cc5-c665-416e-83d8-7761824f6ae7.png)
 
-<img width="600" src="https://user-images.githubusercontent.com/70295997/213338978-6402b78c-6858-4c25-902d-de1ddd90677f.png">
+Appium's Architecture |
+---- |
+Appium is an HTTP server which speaks the WebDriver protocol. |
+You do not call Appium commands directly; instead, you use a client library which turns commands into HTTP requests and sends to Appium. |
+Appium turns those requests into automation behaviors on a device by forwarding the request to a "driver". |
+The result of the command is returned to Appium from the driver, then sent back to the Appium client as an HTTP response, which is parsed into a format you can use in your test code. |
 
-Appium has a typical Client-Server architecture.
-Appium Server runs on the node server (is written in Node.js).
+- Appium has a typical Client-Server architecture.
+- Appium Server runs on the node server (is written in Node.js).
 
 <img width="600" src="https://user-images.githubusercontent.com/70295997/213340824-afd8d79f-6bac-433a-8dff-ad1b2a792ce8.png">
 
@@ -32,11 +37,11 @@ In scenarios with iOS < 9.3, use Bootstrap.js. Appium Server injects Bootstrap.j
 
 In scenarios with iOS >= 9.3, use WebDriver Agent to perform some actions (tap, type, kill app, etc.). The actions are done by WebDriver Agent on a particular iOS device/simulator.
 
-Appium 1.6 started implemeting the new flow of XCUITest for iOS >= 9.3. (Current version is 1.22.3-4, as of 12/01/22).
+Appium 1.6 started implemeting the new flow of XCUITest for iOS >= 9.3. 
 
 How does Appium [Server] decide which path to take? It's decided from the Client script, in the kinds of DC I pass.
 
-From the DC point of view, when I pass __Desired Capabilites: {"AutomationName" : "XCUITest"}__, it means to take the XCUITest Driver flow for iOS >= 9.3. Most users have migrated to iOS 15 and 16, as of 12/01/22.
+From the DC point of view, when I pass __Desired Capabilites: {"AutomationName" : "XCUITest"}__, it means to take the XCUITest Driver flow for iOS >= 9.3.
 
 __Desired Capabilites: {"AutomationName" : "UIAutomation"}__ means to take the UIAutomation Module flow for iOS < 9.3.
 
